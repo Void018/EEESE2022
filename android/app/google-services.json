@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "216927347606",
+    "project_id": "eeese2022",
+    "storage_bucket": "eeese2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216927347606:android:18cf834db28f500c7373b7",
+        "android_client_info": {
+          "package_name": "com.example.eeese2022"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216927347606-hpdljqoen8duh1qcpkvn5eu85hnvo42v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg25Wwl7yrphgkctGg5kfrdNfBWPleRng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216927347606-hpdljqoen8duh1qcpkvn5eu85hnvo42v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

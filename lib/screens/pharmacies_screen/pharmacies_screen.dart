@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(home: Home()));
+class PharmacisScreen extends StatelessWidget {
+  const PharmacisScreen({Key? key}) : super(key: key);
 
-class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Container());
+    return Container(
+      child: Card(
+        child: ListTile(
+          onTap: () {},
+          leading: CircleAvatar(),
+          title: Text('DR.Munther'),
+          trailing: (Icon(Icons.report_gmailerrorred)),
+          subtitle: Text('*Date* '),
+        ),
+      ),
+    );
   }
 }

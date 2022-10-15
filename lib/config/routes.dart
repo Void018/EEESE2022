@@ -1,4 +1,6 @@
 class Routes {
-  static const home = '/';
-  static const app = 'app';
+  static const login = '/login';
+  static const signup = '/signup';
+  static const signupDetails = '/signup_details';
+  static const mainScreen = '/main_screen';
 }

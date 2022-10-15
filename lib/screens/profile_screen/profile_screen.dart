@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(home: profile()));
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({Key? key}) : super(key: key);
 
-class profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Center(),
         title: Text("Profile"),
         centerTitle: true,
-        backgroundColor: Colors.pink[300],
+        backgroundColor: Color(0xffE2CEBE),
         elevation: 0.0,
       ),
       body: Padding(
@@ -19,7 +20,7 @@ class profile extends StatelessWidget {
           children: <Widget>[
             Center(
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/naruto.jpg'),
+                // backgroundImage: AssetImage('assets/naruto.jpg'),
                 radius: 40,
               ),
             ),

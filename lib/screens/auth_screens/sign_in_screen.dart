@@ -1,5 +1,4 @@
-// ignore_for_file: prefer_const_constructors
-
+import 'package:eeese2022/config/routes.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -9,12 +8,12 @@ class SigninScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(30),
-      child: Column(
+      padding: const EdgeInsets.only(top: 30, right: 30, left: 30, bottom: 10),
+      child: ListView(
         children: [
-          Spacer(),
+          SizedBox(height: 50),
           CircleAvatar(radius: 50),
-          Spacer(),
+          SizedBox(height: 50),
           TextField(
             decoration: InputDecoration(
               fillColor: Color(0xA0F3D0D0),
@@ -25,7 +24,7 @@ class SigninScreen extends StatelessWidget {
             ),
             cursorColor: Colors.black,
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 20),
           TextField(
             decoration: InputDecoration(
               fillColor: Color(0xA0F3D0D0),
@@ -39,10 +38,15 @@ class SigninScreen extends StatelessWidget {
           SizedBox(height: 30),
           SizedBox(
             width: 120,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              child: Text('Log in'),
+            height: 60,
+            child: Align(
+              alignment: Alignment.center,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Routes.mainScreen);
+                },
+                child: Text('Log in'),
+              ),
             ),
           ),
           SizedBox(height: 10),
@@ -55,13 +59,13 @@ class SigninScreen extends StatelessWidget {
                   style: TextStyle(decoration: TextDecoration.underline),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
-                      print('hi');
+                      Navigator.of(context).pushNamed(Routes.signup);
                     },
                 ),
               ],
             ),
           ),
-          Spacer(),
+          SizedBox(height: 50),
         ],
       ),
     );
